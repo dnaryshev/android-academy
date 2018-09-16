@@ -3,16 +3,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <EditText
-        android:id="@+id/message_text_input"
+    <TextView
+        android:id="@+id/preview_text"
+        android:textAlignment="center"
         android:textSize="@dimen/text_size"
         android:layout_width="match_parent"
-        android:hint="Type our message here..."
-        android:layout_height="100dp" />
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="0dp" />
     <Button
-        android:id="@+id/preview_button"
-        android:text="@string/preview_button"
+        android:id="@+id/email_button"
+        android:text="@string/email_button"
         android:textSize="@dimen/text_size"
         android:layout_width="match_parent"
+        android:layout_gravity="bottom"
         android:layout_height="50dp"/>
 </LinearLayout>
